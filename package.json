@@ -1,0 +1,63 @@
+{
+  "name": "electron-skeleton",
+  "productName": "electron-skeleton",
+  "version": "1.0.0",
+  "description": "Electron Skeleton",
+  "author": "Jon Stevens <latchkey@gmail.com>",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "lint": "echo \"No linting configured\""
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-forge": "^3.2.0",
+    "electron-prebuilt-compile": "1.7.5"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "dependencies": {
+    "@types/electron-devtools-installer": "^2.0.2",
+    "electron-compile": "^6.4.1",
+    "electron-devtools-installer": "^2.0.1",
+    "vue": "^2.1.7"
+  },
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "yarn"
+      },
+      "electronWinstallerConfig": {
+        "name": "test"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "test"
+      }
+    }
+  }
+}
