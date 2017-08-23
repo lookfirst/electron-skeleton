@@ -4,5 +4,5 @@ Based on `electron-forge init electron-skeleton --template vue` with a couple sm
 
 1. `brew install yarn`
 1. `yarn install`
-1. `tsc`
+1. `./node_modules/.bin/tsc`
 1. `yarn start`
