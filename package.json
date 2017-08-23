@@ -13,6 +13,7 @@
     "lint": "echo \"No linting configured\""
   },
   "devDependencies": {
+    "@types/electron-devtools-installer": "^2.0.2",
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
@@ -23,7 +24,6 @@
     "node": ">= 8.0.0"
   },
   "dependencies": {
-    "@types/electron-devtools-installer": "^2.0.2",
     "electron-compile": "^6.4.1",
     "electron-devtools-installer": "^2.0.1",
     "vue": "^2.1.7"
